@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Tag: Node | Z Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Z Blog">
+<meta property="og:url" content="http://zgu.me/blog/tags/node/index.html">
+<meta property="og:site_name" content="Z Blog">
+<meta property="og:description">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Z Blog">
+<meta name="twitter:description">
+<meta name="twitter:creator" content="@zedgu">
+  
+    <link rel="alternative" href="/atom.xml" title="Z Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-16270236-1', 'auto');
+ga('require', 'displayfeatures');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Z Blog</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">Z is Zed and Zed is me.</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/blog/archives">Archives</a>
+        
+          <a class="main-nav-link" href="https://github.com/zedgu">Github</a>
+        
+          <a class="main-nav-link" href="http://weibo.com/zedgu">Weibo</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://zgu.me"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-use-yield-with-mongoose" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2014/09/11/use-yield-with-mongoose/" class="article-date">
+  <time datetime="2014-09-11T15:25:00.000Z" itemprop="datePublished">2014/9/11</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/notes/">Notes</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2014/09/11/use-yield-with-mongoose/">Use yield with mongoose</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>mongoose 4.0 发布之前，<code>model.save</code> 是不会返回 <code>promise</code> 的，因此，对其或在其 callback 内 <code>yield</code> 都不行，虽然有很多种解决方法，但是感觉，适合于过渡的方法是使用 <code>model.create</code> 来替代。该方法在 3.8.x 中已经可以返回 <code>promise</code>，具体方法参见<a href="http://mongoosejs.com/docs/api.html#model_Model.create" target="_blank" rel="external">http://mongoosejs.com/docs/api.html#model_Model.create</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zgu.me//blog/2014/09/11/use-yield-with-mongoose/" data-id="cib0js07700005xsk97oqgj7o" class="article-share-link">Share</a>
+      
+        <a href="http://zgu.me//blog/2014/09/11/use-yield-with-mongoose/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/node/">Node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/mongodb/">mongodb</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/mongoose/">mongoose</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/yield/">yield</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-how-to-start-pm2-server-in-a-docker-container" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2014/08/25/how-to-start-pm2-server-in-a-docker-container/" class="article-date">
+  <time datetime="2014-08-25T12:06:00.000Z" itemprop="datePublished">2014/8/25</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/notes/">Notes</a>►<a class="article-category-link" href="/blog/categories/notes/works/">Works</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2014/08/25/how-to-start-pm2-server-in-a-docker-container/">How to start pm2 server in a docker container</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>直接在 docker 的 container 中运行 PM2 可能会遇到以下问题：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PM2 dameon PID = 1&#10;0 with /.pm2/pm2.log file not found</span><br></pre></td></tr></table></figure></p>
+<p>这是因为 <code>/.pm2</code> 目录不存在造成的。可能很多人此时会想到去创建该目录，事实上是不必要的，比较好的做法是使用官方提供的 <code>dump</code> 命令。</p>
+<p>运行 PM2 的 Dockerfile ，可以参考：</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">FROM node:<span class="number">0.11</span>.<span class="number">13</span></span><br><span class="line"><span class="comment"># or just node, without tag</span></span><br><span class="line"></span><br><span class="line">RUN npm install -g pm2</span><br><span class="line">RUN pm2 dump</span><br><span class="line"><span class="comment"># dump will start pm2 daemon and create everything needed</span></span><br><span class="line"></span><br><span class="line">VOLUME [<span class="string">"/srv/apps"</span>, <span class="string">"/srv/logs"</span>, <span class="string">"/srv/server.json"</span>]</span><br><span class="line"><span class="comment"># don't put the files in docker container, user -v</span></span><br><span class="line"></span><br><span class="line">EXPOSE <span class="number">3000</span></span><br><span class="line"></span><br><span class="line">CMD [<span class="string">"pm2"</span>, <span class="string">"start"</span>, <span class="string">"/srv/server.json"</span>, <span class="string">"--no-daemon"</span>]</span><br><span class="line"><span class="comment"># no daemon mode for docker</span></span><br></pre></td></tr></table></figure>
+<p>搞定。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zgu.me//blog/2014/08/25/how-to-start-pm2-server-in-a-docker-container/" data-id="cib0js0ai00285xskmzj0n0un" class="article-share-link">Share</a>
+      
+        <a href="http://zgu.me//blog/2014/08/25/how-to-start-pm2-server-in-a-docker-container/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/docker/">Docker</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/dockerfile/">Dockerfile</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/node/">Node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/debug/">debug</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/pm2/">pm2</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-npm-and-node-gyp" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2014/08/16/npm-and-node-gyp/" class="article-date">
+  <time datetime="2014-08-16T12:47:00.000Z" itemprop="datePublished">2014/8/16</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/notes/">Notes</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2014/08/16/npm-and-node-gyp/">NPM and node-gyp</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>pm2 中会使用到 fsevents，node-gyp rebuild fsevents 时，会遇到下面这样的错误：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">user <span class="string">"root"</span> does not have permission to access the dev dir</span><br></pre></td></tr></table></figure></p>
+<p>网上找到的讨论，说 node-gyp 不能用在 sudo 下，由于 Mac 上 pkg 安装的 node 需要 sudo 执行 npm，所以这样：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown -R `whoami` ~/.npm</span><br><span class="line">sudo chown -R `whoami` /usr/<span class="built_in">local</span>/lib/node_modules</span><br></pre></td></tr></table></figure></p>
+<p>之后就不再需要 sudo 安装 npm 了。</p>
+<p>重新安装 pm2 ，到了 fsevents 时, node-gyp rebuild 能运行了，但到了一半，错误变成这样：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">make: *** [Release/obj.target/fse/fsevents.o] Error <span class="number">1</span></span><br><span class="line">gyp ERR! build error</span><br><span class="line">gyp ERR! stack Error: `make` failed with <span class="built_in">exit</span> code: <span class="number">2</span></span><br><span class="line">gyp ERR! stack     at ChildProcess.onExit (/usr/<span class="built_in">local</span>/lib/node_modules/npm/node_modules/node-gyp/lib/build.js:<span class="number">267</span>:<span class="number">23</span>)</span><br><span class="line">gyp ERR! stack     at ChildProcess.EventEmitter.emit (events.js:<span class="number">110</span>:<span class="number">17</span>)</span><br><span class="line">gyp ERR! stack     at Process.ChildProcess._handle.onexit (child_process.js:<span class="number">1046</span>:<span class="number">12</span>)</span><br><span class="line">gyp ERR! System Darwin <span class="number">13.3</span>.<span class="number">0</span></span><br><span class="line">gyp ERR! <span class="built_in">command</span> <span class="string">"node"</span> <span class="string">"/usr/local/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js"</span> <span class="string">"rebuild"</span></span><br></pre></td></tr></table></figure></p>
+<p>但是安装是成功的…… pm2 可以正常使用。</p>
+<p>为探究竟，费尽半天辛苦，发现原来是 node 0.11.13 的问题……可以看这里<a href="https://github.com/pipobscure/fsevents/pull/26" target="_blank" rel="external">https://github.com/pipobscure/fsevents/pull/26</a></p>
+<p>无言以对。</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zgu.me//blog/2014/08/16/npm-and-node-gyp/" data-id="cib0js09l000x5xskhl62p37f" class="article-share-link">Share</a>
+      
+        <a href="http://zgu.me//blog/2014/08/16/npm-and-node-gyp/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/node/">Node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/error/">error</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/gyp/">gyp</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/npm/">npm</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/pm2/">pm2</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-make-forever-for-nodejs-as-a-linux-service" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2013/09/10/make-forever-for-nodejs-as-a-linux-service/" class="article-date">
+  <time datetime="2013-09-09T17:58:00.000Z" itemprop="datePublished">2013/9/10</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/notes/">Notes</a>►<a class="article-category-link" href="/blog/categories/notes/works/">Works</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2013/09/10/make-forever-for-nodejs-as-a-linux-service/">Make forever for node.js as a Linux service</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><em>由于个人比较喜欢在 Linux 上使用 service ，所以才有了以下的折腾。</em></p>
+<h4 id="forever_与_supervisor_的选择">forever 与 supervisor 的选择</h4><p>其实，在本地开发还是比较喜欢用 supervisor 的，因为命令简单。考虑到服务器上可能会运行多个 node server 实例，因此选择 forever 来做 node 服务的管理。</p>
+<h6 id="了解_forever_，戳_https://github-com/nodejitsu/forever">了解 forever ，戳 <a href="https://github.com/nodejitsu/forever" target="_blank" rel="external">https://github.com/nodejitsu/forever</a></h6><h6 id="了解_supervisor，戳https://github-com/isaacs/node-supervisor">了解 supervisor，戳<a href="https://github.com/isaacs/node-supervisor" target="_blank" rel="external">https://github.com/isaacs/node-supervisor</a></h6><h2 id="Step_1">Step 1</h2><h3 id="安装_forever">安装 forever</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g forever</span><br></pre></td></tr></table></figure>
+<p>（这货依赖不是一般多……）</p>
+<p>安装成功后可以看到安装路径，记下待用。以下是我的服务器环境的返回：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/usr/<span class="built_in">local</span>/lib/node_modules</span><br></pre></td></tr></table></figure></p>
+<h5 id="注意：在_CentOS_上安装_nodejs_/_npm_的方式不同，会得到不同的安装路径：make_install_一般在_/usr/local/lib/node_modules；yum_install_一般在_/usr/lib/node_modules_。">注意：在 CentOS 上安装 nodejs / npm 的方式不同，会得到不同的安装路径：make install 一般在 /usr/local/lib/node_modules；yum install 一般在 /usr/lib/node_modules 。</h5><h2 id="Step_2">Step 2</h2><h3 id="创建启动文件">创建启动文件</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/init.d/the_name_you_want</span><br></pre></td></tr></table></figure>
+<h3 id="启动文件内容">启动文件内容</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="shebang">#!/bin/bash</span></span><br><span class="line"><span class="comment"># chkconfig: 345 99 01</span></span><br><span class="line"><span class="comment"># description: forever service</span></span><br></pre></td></tr></table></figure>
+<p><em>345 是启动级别，99 是启动优先级（序号），01 是关闭优先级（序号）。如果有其他服务依赖于 forever 服务，可以提高优先级，以确保其他服务启动时其可用。</em></p>
+<h4 id="继续：">继续：</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">DEAMON=<span class="string">"/your/server/config/file/path"</span></span><br><span class="line">LOG=<span class="string">"/your/logs/xxx.log"</span></span><br><span class="line">PID=<span class="string">"/root/.forever/pids/xxx.pid"</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><p>DEAMON 处给出配置文件地址，其中文件内容每行为一项任务，每项形如：<br><strong>name app.js path/of/app/js</strong></p>
+</li>
+<li><p>两处“xxx”是占位符，稍后替换用；</p>
+</li>
+</ul>
+<p><em>注意右边是值在引号内！！不然 forever 可能会喊它要 string，尤其是 LOG 地址。在 yum 安装环境中遇到过，make 安装环境未重现。</em></p>
+<h4 id="继续">继续</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$PATH</span>:/usr/<span class="built_in">local</span>/bin</span><br><span class="line"><span class="built_in">export</span> NODE_PATH=<span class="variable">$NODE_PATH</span>:/usr/<span class="built_in">local</span>/lib/node_modules</span><br><span class="line"><span class="built_in">export</span> NODE_ENV=production</span><br></pre></td></tr></table></figure>
+<p><em>注入环境变量，不然找不到 node 或者 -g 安装的包。上面已经提过，地址根据安装方法不同不一致，区别在于有没有 local 这一级，自己根据实际情况定夺。</em></p>
+<h4 id="继续，start_命令：">继续，start 命令：</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> <span class="string">"<span class="variable">$1</span>"</span> <span class="keyword">in</span></span><br><span class="line">  start)</span><br><span class="line">    <span class="keyword">while</span> <span class="built_in">read</span> Name Main Path</span><br><span class="line">    <span class="keyword">do</span></span><br><span class="line">      <span class="keyword">if</span> [ <span class="variable">$2</span> ]</span><br><span class="line">      <span class="keyword">then</span></span><br><span class="line">        <span class="keyword">if</span> [ <span class="string">"<span class="variable">$2</span>"</span> != <span class="string">"<span class="variable">$Name</span>"</span> ]</span><br><span class="line">        <span class="keyword">then</span></span><br><span class="line">          <span class="built_in">continue</span></span><br><span class="line">        <span class="keyword">fi</span></span><br><span class="line">      <span class="keyword">fi</span></span><br><span class="line">      <span class="keyword">if</span> [ <span class="operator">-f</span> <span class="variable">$&#123;PID/xxx/$Name&#125;</span> ]</span><br><span class="line">      <span class="keyword">then</span></span><br><span class="line">        <span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">"\033[0;33mWarn:\033[0m \033[0;32m<span class="variable">$Name</span>\033[0m is already running well."</span></span><br><span class="line">        <span class="built_in">continue</span></span><br><span class="line">      <span class="keyword">fi</span></span><br><span class="line">      forever start -wal <span class="variable">$&#123;LOG/xxx/$Name&#125;</span> -m <span class="number">0</span> --watchDirectory <span class="variable">$Path</span> --pidFile <span class="variable">$&#123;PID/xxx/$Name&#125;</span> <span class="variable">$Path</span>/<span class="variable">$Main</span></span><br><span class="line">    <span class="keyword">done</span> &lt; <span class="variable">$DEAMON</span></span><br><span class="line">    ;;</span><br></pre></td></tr></table></figure>
+<p><em>详细说明一下：</em></p>
+<ul>
+<li>“Name Main Path” 对应配置文件中的内容格式，</li>
+<li>start 后不跟参数，则启动所有配置项；跟上配置项 Name 做参数则仅启动该项</li>
+<li>已经启动的返回友好提示信息</li>
+</ul>
+<p><em>关于 forever 的说明：</em></p>
+<ul>
+<li>-w 监视文件的变更，一旦有变更，forever 会重启关联 server</li>
+<li>-a 声明追加内容到已有日志文件 <em>（没有 -a 重启时会直接报错并中断…………谁会每次重新启动来关心 log 日志？！为什么 -a 不是默认值！！！）</em></li>
+<li>-l 指定日志文件地址</li>
+<li>-m 最大运行次数</li>
+<li>—watchDirectory 监视文件的目录 path</li>
+<li>—pidFile 字面意思</li>
+</ul>
+<p><em>list 命令用来查看正在运行的进程，其他命令顾名思义了。</em></p>
+<h4 id="继续，stop_命令：">继续，stop 命令：</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">stop)</span><br><span class="line">  <span class="keyword">if</span> [[ `forever list` =~ <span class="string">'No'</span> ]]</span><br><span class="line">  <span class="keyword">then</span></span><br><span class="line">    forever list</span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'======================================'</span></span><br><span class="line">    forever list</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'======================================'</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">"Enter the number of uid[\033[0;32mX\033[0m] to stop."</span></span><br><span class="line">    <span class="built_in">printf</span> <span class="string">'uid: '</span></span><br><span class="line">    <span class="built_in">read</span> answer</span><br><span class="line">    <span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">"\033[0;32mStopping\033[0m <span class="variable">$answer</span>..."</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'======================================'</span></span><br><span class="line">    forever stop <span class="variable">$answer</span> || <span class="built_in">echo</span> <span class="string">'Wrong entry!\rExit!\rRetry.'</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">'======================================'</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">"\033[0;32mDone!\033[0m"</span></span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line">  ;;</span><br></pre></td></tr></table></figure>
+<p><em>说明</em></p>
+<ul>
+<li>不需要第二参数</li>
+<li>显示正在运行的任务列表，输入 uid 号以停止相应任务</li>
+</ul>
+<h4 id="继续，stopall、restartall_命令：">继续，stopall、restartall 命令：</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">stopall)</span><br><span class="line">  forever stopall</span><br><span class="line">  ;;</span><br><span class="line">restartall)</span><br><span class="line">  forever restartall</span><br><span class="line">  ;;</span><br></pre></td></tr></table></figure>
+<p><em>很简单，不错解释了。</em></p>
+<h4 id="继续，reload|restart_命令：">继续，reload|restart 命令：</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">reload|restart)</span><br><span class="line">  <span class="keyword">if</span> [ <span class="variable">$2</span> ]</span><br><span class="line">  <span class="keyword">then</span></span><br><span class="line">    <span class="keyword">while</span> <span class="built_in">read</span> Name Main Path</span><br><span class="line">    <span class="keyword">do</span></span><br><span class="line">      <span class="keyword">if</span> [ <span class="string">"<span class="variable">$Name</span>"</span> = <span class="string">"<span class="variable">$2</span>"</span> ]</span><br><span class="line">      <span class="keyword">then</span></span><br><span class="line">        forever restart -wal <span class="variable">$&#123;LOG/xxx/$Name&#125;</span> -m <span class="number">0</span> --watchDirectory <span class="variable">$Path</span> --pidFile <span class="variable">$&#123;PID/xxx/$Name&#125;</span> <span class="variable">$Path</span>/<span class="variable">$Main</span></span><br><span class="line">      <span class="keyword">fi</span></span><br><span class="line">    <span class="keyword">done</span> &lt; <span class="variable">$DEAMON</span></span><br><span class="line">  <span class="keyword">else</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="operator">-e</span> <span class="string">"\033[0;31merror\033[0m: need second param like this:      <span class="variable">$1</span> name_of_the_app"</span></span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line">  ;;</span><br></pre></td></tr></table></figure>
+<p><em>用法说明</em></p>
+<ul>
+<li>必须使用第二参数：任务项的 Name</li>
+<li>reload、restart 互为别名</li>
+</ul>
+<h4 id="继续，获取运行任务列表：">继续，获取运行任务列表：</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">list)</span><br><span class="line">  forever list</span><br><span class="line">  ;;</span><br></pre></td></tr></table></figure>
+<p>没有命令时：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  *)</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">"Usage: /etc/init.d/noded &#123;start|stop|restart|reload|stopall|restartall|list&#125;"</span></span><br><span class="line">    <span class="built_in">exit</span> <span class="number">1</span></span><br><span class="line">    ;;</span><br><span class="line"><span class="keyword">esac</span></span><br><span class="line"><span class="built_in">exit</span> <span class="number">0</span></span><br></pre></td></tr></table></figure></p>
+<h4 id="到这里，启动文件创建完成了，可以_:wq_了。">到这里，启动文件创建完成了，可以 :wq 了。</h4><h2 id="Step_3">Step 3</h2><h3 id="确认启动文件的一些属性">确认启动文件的一些属性</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chown root:root /etc/init.d/the_name_you_want</span><br><span class="line">sudo chmod <span class="number">755</span> /etc/init.d/the_name_you_want</span><br></pre></td></tr></table></figure>
+<h3 id="启动服务">启动服务</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo chkconfig --add the_name_you_want</span><br><span class="line">chkconfig the_name_you_want on</span><br></pre></td></tr></table></figure>
+<h3 id="基本完成">基本完成</h3><p>可以通过如下命令来控制服务了<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">sudo service the_name_you_want start</span><br><span class="line">sudo service the_name_you_want restart</span><br><span class="line">sudo service the_name_you_want stop</span><br><span class="line">sudo service the_name_you_want list</span><br></pre></td></tr></table></figure></p>
+<h2 id="其他问题">其他问题</h2><p><strong>添加忽略监控文件的配置文件</strong><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /your/watch/path/.foreverignore</span><br></pre></td></tr></table></figure></p>
+<p><strong>如果没有 .foreverignore 会报一个 error，如下：</strong><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">error: Could not <span class="built_in">read</span> .foreverignore file.</span><br><span class="line">error: ENOENT, open <span class="string">'/your/watch/path/.foreverignore'</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>但是你的 app.js 是会正常执行的，应该说一切正常。</strong></p>
+<p><strong>而，如果没有 —watchDirectory 参数配置，你仍然会得到一个 error，如下：</strong><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">error: Could not <span class="built_in">read</span> .foreverignore file.</span><br><span class="line">error: ENOENT, open <span class="string">'/.foreverignore'</span></span><br><span class="line"></span><br><span class="line">/usr/<span class="built_in">local</span>/lib/node_modules/forever/node_modules/forever-monitor/node_modules/watch/main.js:<span class="number">63</span></span><br><span class="line">    <span class="keyword">if</span> (err) throw err;</span><br><span class="line">               ^</span><br><span class="line">    Error: ENOTDIR, readdir <span class="string">'/proc/1/fd/5'</span></span><br></pre></td></tr></table></figure></p>
+<p><strong>此时，你的 app.js 依然欢快运行，但是你执行 list 命令去看它的时候，它……</strong><br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo /etc/init.d/noded list</span><br><span class="line">info:    No forever processes running</span><br></pre></td></tr></table></figure></p>
+<p><strong>-w 和 —watchDirectory 要一起出现，就够了，-w 不能直接接收值也忍了，不设置后者直接出现这种奇异现象，真是……（此处省略10000字！！）</strong></p>
+<hr>
+<p>End</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zgu.me//blog/2013/09/10/make-forever-for-nodejs-as-a-linux-service/" data-id="cib0js0ae001z5xsk2ww9ecw7" class="article-share-link">Share</a>
+      
+        <a href="http://zgu.me//blog/2013/09/10/make-forever-for-nodejs-as-a-linux-service/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/linux/">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/node/">Node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/solution/">Solution</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/forever/">forever</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-convert-svg-to-jpg-on-mac-with-imagemagick" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/blog/2013/08/31/convert-svg-to-jpg-on-mac-with-imagemagick/" class="article-date">
+  <time datetime="2013-08-30T16:58:00.000Z" itemprop="datePublished">2013/8/31</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/blog/categories/notes/">Notes</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/blog/2013/08/31/convert-svg-to-jpg-on-mac-with-imagemagick/">在 Mac 上用 ImageMagick 转换 SVG</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="使用_ImageMagick">使用 ImageMagick</h2><p>ImageMagick 是老牌的图片解决方案了，这次在 node.js 项目里本想用它的一个演进项目 GraphicsMagick，只可惜，在同样使用 gm 这个 npm 的情况下，GraphicsMagick 对中文的支持太不好了，于是在折腾一番后，还是选择放弃尝试新的事物，转为继续使用各方面技术支持更广泛的老大哥 ImageMagick。</p>
+<p>我的需求是需要将 SVG 转为 Raster Graphics (位图)，例如将如下 SVG 转为 JPG：</p>
+<blockquote>
+<p><a href="http://www.w3.org/TR/2009/WD-SVGCompositing-20090430/examples/over.svg" target="_blank" rel="external">http://www.w3.org/TR/2009/WD-SVGCompositing-20090430/examples/over.svg</a></p>
+</blockquote>
+<p>结果转换成 JPG 后，图片变成：</p>
+<img src="/images/drawing_xml.jpg" title="With XML With XML">
+<p>内容细节严重丢失，内嵌图片不见了。</p>
+<p>经过各种参数调整，可问题依然。此时，查看<a href="http://www.imagemagick.org/Usage/draw/#svg" target="_blank" rel="external">官方文档</a>发现一些问题：</p>
+<blockquote>
+<p>ImageMagick 对 SVG 支持三种格式：MSVG, SVG, SVGZ。MSVG 为 ImageMagick 的内建库；SVG 和 SVGZ 则依赖其他一些库，比如，官方推荐的 RSVG。</p>
+</blockquote>
+<p>于是用命令查看对 SVG 的支持情况：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">convert -list format | grep SVG</span><br></pre></td></tr></table></figure></p>
+<p>返回<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">MSVG  SVG       rw+   ImageMagick<span class="string">'s own SVG internal renderer</span><br><span class="line"> SVG  SVG       rw+   Scalable Vector Graphics (XML 2.7.8)</span><br><span class="line">SVGZ  SVG       rw+   Compressed Scalable Vector Graphics (XML 2.7.8)</span></span><br></pre></td></tr></table></figure></p>
+<p>XML？！坑爹啊！果然不是 RSVG 库，还不是得很奇葩……</p>
+<p>好吧！装库！</p>
+<h2 id="一堆问题">一堆问题</h2><p>先安装 librsvg 库，在 Mac 下我目前采用 brew 解决包管理，所以：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install librsvg</span><br></pre></td></tr></table></figure></p>
+<p>结果报错，如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">librsvg: Unsatisfied dependency: XQuartz</span><br><span class="line">Homebrew does not package XQuartz. Installers may be found at:</span><br><span class="line">  https://xquartz.macosforge.org</span><br><span class="line">cairo: Unsatisfied dependency: XQuartz</span><br><span class="line">Homebrew does not package XQuartz. Installers may be found at:</span><br><span class="line">  https://xquartz.macosforge.org</span><br><span class="line">pango: Unsatisfied dependency: XQuartz</span><br><span class="line">Homebrew does not package XQuartz. Installers may be found at:</span><br><span class="line">  https://xquartz.macosforge.org</span><br><span class="line">gtk+: Unsatisfied dependency: XQuartz <span class="number">2.3</span>.<span class="number">6</span></span><br><span class="line">Homebrew does not package XQuartz. Installers may be found at:</span><br><span class="line">  https://xquartz.macosforge.org</span><br><span class="line">Error: An unsatisfied requirement failed this build.</span><br></pre></td></tr></table></figure></p>
+<p>这才发现，原来 Mac 10.8 上没有 X11，好吧，安装一个，Apple 官方推荐的下载地址：</p>
+<blockquote>
+<p><a href="http://xquartz.macosforge.org/landing/" target="_blank" rel="external">http://xquartz.macosforge.org/landing/</a></p>
+</blockquote>
+<p>是 dmg 文件，如何安装就是不用说了。XQuartz 安装完之后，再次运行安装 librsvg 的命令就势如破竹了。</p>
+<p>librsvg 安装好之后需要重新安装 ImageMagick，网上找到 —use-rsvg 这个参数，但结果是又一次坑爹了。一阵安装编译等待之后，依旧显示 (XML 2.7.8)！！！什么情况呢？重新进入无尽的搜索，最后是从 brew 源代码里找到当前 brew 版本中的正确参数 —with-librsvg。源码见：</p>
+<blockquote>
+<p><a href="https://github.com/mxcl/homebrew/blob/master/Library/Formula/imagemagick.rb" target="_blank" rel="external">https://github.com/mxcl/homebrew/blob/master/Library/Formula/imagemagick.rb</a></p>
+</blockquote>
+<p>结果执行如下命令就成功了…<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew reinstall imagemagick --with-librsvg --with-webp</span><br></pre></td></tr></table></figure></p>
+<p>检验一下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">convert -list format | grep SVG</span><br><span class="line">     MSVG  SVG       rw+   ImageMagick<span class="string">'s own SVG internal renderer</span><br><span class="line">      SVG  SVG       rw+   Scalable Vector Graphics (RSVG 2.36.3)</span><br><span class="line">     SVGZ  SVG       rw+   Compressed Scalable Vector Graphics (RSVG 2.36.3)</span></span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>另外，如果此时还有问题，识别不到 RSVG 的话，请添加以下环境变量：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PKG_CONFIG_PATH=<span class="variable">$PKG_CONFIG_PATH</span>:/opt/X11/lib/pkgconfig</span><br></pre></td></tr></table></figure></p>
+</blockquote>
+<p>而，如果是使用 port 的，命令如下：<br><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">port install imagemagick +rsvg</span><br></pre></td></tr></table></figure></p>
+<p>按理到这里为止，ImageMagick 已经可以正常通过 librsvg 来渲染 SVG 格式的图片了，但是在我的 Mac 环境里始终存在丢失 xlink 进来的外链 image 的问题。于是又进入了茫然……</p>
+<h2 id="不要妄自菲薄">不要妄自菲薄</h2><p>为了解决 node.js 下使用 ImageMagick 来处理图片的问题，前后折腾了几个小时，当所有已知问题都解决的时候一切回到原点。很不甘，是哪儿弄错了？于是又折腾了几个小时……</p>
+<p>由于使用场景和使用的细节已然是少数需求了，国内相关文字几乎为零，英文站点上的内容也极少。stackoverflow 上尽是提问的，回答了了，更多的是根本没有回答。</p>
+<p>突然，因为连续几篇文字提到了 ImageMagick 的不同版本对于类似的 convert 时出现的 bug，于是我怀疑是我环境里 ImageMagick 版本的问题。立刻在服务器环境中进行了测试（ImageMagick 6.5.4-7 with RSVG 2.26.0 on CentOS）果然，一切正常了！OMG！</p>
+<p>出错的是 ImageMagick 6.8.6-3 with RSVG 2.36.3 版本，貌似是 RSVG 的错误，具体哪里出错暂时无力再去验证。具体错误表现是：</p>
+<ul>
+<li>xlink:href=”abc.png” 同目录丢失</li>
+<li>xlink:href=”./abc.png” 相对路径丢失</li>
+<li>xlink:href=”/path/to/abc.png” 绝对路径丢失</li>
+<li>xlink:href=”data:image/png;base64,…=” 内嵌 Base64 格式正常</li>
+</ul>
+<p>最后得到正确的图像输出：<br><img src="/images/drawing_rsvg.jpg" title="With RSVG With RSVG"></p>
+<hr>
+<p>此时，我想说，虽然常提“不要妄自菲薄”，但是做到还是挺难的。质疑问题需要的是锲而不舍的精神和精湛的技艺，我辈还不具备两者，还没勇气去怀疑知名软件库，真是还需努力！</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zgu.me//blog/2013/08/31/convert-svg-to-jpg-on-mac-with-imagemagick/" data-id="cib0js0ax002p5xskf2cc7jwf" class="article-share-link">Share</a>
+      
+        <a href="http://zgu.me//blog/2013/08/31/convert-svg-to-jpg-on-mac-with-imagemagick/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/graphicsmagick/">GraphicsMagick</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/imagemagick/">ImageMagick</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/mac/">Mac</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/node/">Node</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/svg/">SVG</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/solution/">Solution</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/gm/">gm</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+  
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/notes/">Notes</a><span class="category-list-count">11</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/blog/categories/notes/bookmarks/">Bookmarks</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/notes/works/">Works</a><span class="category-list-count">2</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/blog/categories/words/">Words</a><span class="category-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/atom/">Atom</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/coffeescript/">CoffeeScript</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/docker/">Docker</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/dockerfile/">Dockerfile</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/graphicsmagick/">GraphicsMagick</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/hexo/">Hexo</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/imagemagick/">ImageMagick</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/jekyll/">Jekyll</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/linux/">Linux</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/mac/">Mac</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/node/">Node</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/octopress/">Octopress</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/svg/">SVG</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/solution/">Solution</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/words/">Words</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/cgclear/">cgclear</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/cgconfig/">cgconfig</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/cluster/">cluster</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/debug/">debug</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/error/">error</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/forever/">forever</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/git/">git</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/gm/">gm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/gyp/">gyp</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/lxc/">lxc</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/mongodb/">mongodb</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/mongoose/">mongoose</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/network/">network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/npm/">npm</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/pm2/">pm2</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/shell/">shell</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/socket/">socket</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/ssh/">ssh</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/yield/">yield</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/blog/tags/atom/" style="font-size: 12.5px;">Atom</a> <a href="/blog/tags/coffeescript/" style="font-size: 10px;">CoffeeScript</a> <a href="/blog/tags/docker/" style="font-size: 15px;">Docker</a> <a href="/blog/tags/dockerfile/" style="font-size: 10px;">Dockerfile</a> <a href="/blog/tags/graphicsmagick/" style="font-size: 10px;">GraphicsMagick</a> <a href="/blog/tags/hexo/" style="font-size: 12.5px;">Hexo</a> <a href="/blog/tags/imagemagick/" style="font-size: 10px;">ImageMagick</a> <a href="/blog/tags/jekyll/" style="font-size: 10px;">Jekyll</a> <a href="/blog/tags/linux/" style="font-size: 20px;">Linux</a> <a href="/blog/tags/mac/" style="font-size: 12.5px;">Mac</a> <a href="/blog/tags/node/" style="font-size: 20px;">Node</a> <a href="/blog/tags/octopress/" style="font-size: 10px;">Octopress</a> <a href="/blog/tags/svg/" style="font-size: 10px;">SVG</a> <a href="/blog/tags/solution/" style="font-size: 17.5px;">Solution</a> <a href="/blog/tags/words/" style="font-size: 15px;">Words</a> <a href="/blog/tags/cgclear/" style="font-size: 10px;">cgclear</a> <a href="/blog/tags/cgconfig/" style="font-size: 10px;">cgconfig</a> <a href="/blog/tags/cluster/" style="font-size: 10px;">cluster</a> <a href="/blog/tags/debug/" style="font-size: 12.5px;">debug</a> <a href="/blog/tags/error/" style="font-size: 10px;">error</a> <a href="/blog/tags/forever/" style="font-size: 10px;">forever</a> <a href="/blog/tags/git/" style="font-size: 10px;">git</a> <a href="/blog/tags/gm/" style="font-size: 10px;">gm</a> <a href="/blog/tags/gyp/" style="font-size: 10px;">gyp</a> <a href="/blog/tags/lxc/" style="font-size: 10px;">lxc</a> <a href="/blog/tags/mongodb/" style="font-size: 10px;">mongodb</a> <a href="/blog/tags/mongoose/" style="font-size: 10px;">mongoose</a> <a href="/blog/tags/network/" style="font-size: 10px;">network</a> <a href="/blog/tags/npm/" style="font-size: 10px;">npm</a> <a href="/blog/tags/pm2/" style="font-size: 15px;">pm2</a> <a href="/blog/tags/shell/" style="font-size: 10px;">shell</a> <a href="/blog/tags/socket/" style="font-size: 10px;">socket</a> <a href="/blog/tags/ssh/" style="font-size: 10px;">ssh</a> <a href="/blog/tags/yield/" style="font-size: 10px;">yield</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2015/06/">June 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/09/">September 2014</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2014/08/">August 2014</a><span class="archive-list-count">9</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2013/09/">September 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2013/08/">August 2013</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/blog/archives/2013/06/">June 2013</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/blog/2015/06/17/pm2-with-socket-io/">PM2 with socket.io</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2014/09/11/use-yield-with-mongoose/">Use yield with mongoose</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2014/08/25/how-to-start-pm2-server-in-a-docker-container/">How to start pm2 server in a docker container</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2014/08/24/dash-is-not-bash/">Dash is not bash</a>
+          </li>
+        
+          <li>
+            <a href="/blog/2014/08/21/use-ssh-agent-forwarding-in-your-private-network/">Use SSH agent forwarding in your private network</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2015 Zed Gu<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/blog/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="https://github.com/zedgu" class="mobile-nav-link">Github</a>
+  
+    <a href="http://weibo.com/zedgu" class="mobile-nav-link">Weibo</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'zgu';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+  <script src="/fancybox/jquery.fancybox.pack.js" type="text/javascript"></script>
+
+
+<script src="/js/script.js" type="text/javascript"></script>
+
+  </div>
+</body>
+</html>
